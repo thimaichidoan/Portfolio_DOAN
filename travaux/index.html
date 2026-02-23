@@ -3,70 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Travaux</title>
+  <title>Travaux - Portfolio DOAN</title>
   <link rel="stylesheet" href="../styles.css" />
 </head>
-<body>
-  <header class="container">
-    <h1>Travaux</h1>
-    <p>Retrouvez ici les livrables demandés (PDF, rapports, etc.).</p>
 
-    <nav class="nav">
-      <a href="../index.html">⬅ Accueil</a>
-      <a href="index.html" aria-current="page">Travaux</a>
-      <a href="../cours/index.html">Cours</a>
-      <a href="../certifications/index.html">Certifications</a>
-      <a href="../projet-final/index.html">Projet final</a>
-      <a href="../soutenance/index.html">Soutenance</a>
-      <a href="../ressources/index.html">Ressources</a>
-      <a href="../a-propos/index.html">À propos</a>
-    </nav>
+<body>
+
+  <!-- ===== BARRE PRINCIPALE ===== -->
+  <header class="topbar">
+    <div class="container bar-content">
+
+      <div class="logo">
+        Portfolio MIAGE — Thi Mai Chi DOAN
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html" class="btn">Accueil</a>
+        <a href="index.html" class="btn active">Travaux</a>
+        <a href="../cours/index.html" class="btn">Cours</a>
+        <a href="../certifications/index.html" class="btn">Certifications</a>
+        <a href="../projet-final/index.html" class="btn">Projet final</a>
+        <a href="../soutenance/index.html" class="btn">Soutenance</a>
+        <a href="../ressources/index.html" class="btn">Ressources</a>
+        <a href="../a-propos/index.html" class="btn">À propos</a>
+      </nav>
+
+    </div>
   </header>
 
+  <!-- ===== CONTENU ===== -->
   <main class="container">
+
     <section class="card">
       <h2>Travaux demandés</h2>
 
       <ul class="list">
         <li class="item">
-          <a class="file" href="TD1.pdf" target="_blank" rel="noopener">
-            <span class="file-title">TD1 – Introduction MIAGE</span>
+          <a class="file" href="TP1.pdf" target="_blank" rel="noopener">
+            <span class="file-title">TP1 – Odoo</span>
+            <span class="file-meta">PDF · Ouvrir</span>
+          </a>
+        </li>
+
+                <li class="item">
+          <a class="file" href="TP2.pdf" target="_blank" rel="noopener">
+            <span class="file-title">TP2 – HubSpot</span>
             <span class="file-meta">PDF · Ouvrir</span>
           </a>
         </li>
       </ul>
+
     </section>
 
-    <section class="card" style="margin-top:16px">
-      <h2>Conseil</h2>
-      <p>Ajoute tes PDFs dans le même dossier <code>travaux/</code> et crée un lien comme ci-dessus.</p>
-    </section>
   </main>
 
   <footer class="container footer">
-    <small>© <span id="y"></span> — Portfolio DOAN</small>
+    <small>© <span id="y"></span> Thi Mai Chi DOAN</small>
   </footer>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 
-  <!-- Petit style local pour une liste plus jolie (optionnel) -->
-  <style>
-    .list{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
-    .item{margin:0}
-    .file{
-      display:flex;justify-content:space-between;gap:12px;align-items:center;
-      padding:12px 14px;border-radius:14px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      text-decoration:none;color:inherit;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-    }
-    .file:hover{transform:translateY(-2px);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.24)}
-    .file-title{font-weight:600}
-    .file-meta{opacity:.75;font-size:.95rem;white-space:nowrap}
-    code{opacity:.9}
-  </style>
 </body>
 </html>
