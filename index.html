@@ -2,17 +2,15 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio - DOAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio MIAGE - Thi Mai Chi DOAN</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- ===== BARRE PRINCIPALE ===== -->
   <header class="topbar">
     <div class="container bar-content">
-
       <div class="logo">
         Portfolio MIAGE — Thi Mai Chi DOAN
       </div>
@@ -27,37 +25,91 @@
         <a href="ressources/index.html" class="btn">Ressources</a>
         <a href="a-propos/index.html" class="btn">À propos</a>
       </nav>
-
     </div>
   </header>
 
-  <!-- ===== CONTENU ===== -->
   <main class="container">
 
-    <section class="card">
-      <h2>Bienvenue</h2>
+    <section class="card hero">
+      <h1>Bienvenue sur mon portfolio numérique</h1>
       <p>
-        Ce site centralise tous mes livrables MIAGE, organisés par rubrique.
+        Ce portfolio centralise l’ensemble de mes productions réalisées dans le cadre
+        du parcours MIAGE. Il présente mes travaux académiques, mes supports de cours,
+        mes certifications, mon projet final CRM, mon diaporama de soutenance ainsi que
+        des ressources complémentaires.
       </p>
 
       <div class="hero-buttons">
-        <a href="cv.pdf" target="_blank" class="hero-btn secondary">
-          Voir mon CV
-        </a>
-
-        <a href="https://www.linkedin.com/in/TON-LINKEDIN"
-           target="_blank"
-           class="hero-btn secondary">
-          LinkedIn
-        </a>
+        <a href="a-propos/index.html" class="hero-btn primary">Découvrir mon profil</a>
+        <a href="projet-final/index.html" class="hero-btn secondary">Voir le projet CRM</a>
+        <a href="assets/pdf/cv-ats.pdf" target="_blank" class="hero-btn secondary">Voir mon CV</a>
+        <a href="https://www.linkedin.com/in/TON-LINKEDIN" target="_blank" class="hero-btn secondary">LinkedIn</a>
       </div>
+    </section>
+
+    <section class="card">
+      <h2>Présentation du portfolio</h2>
+      <p>
+        Ce site a été développé en HTML, CSS et JavaScript, puis mis en ligne avec GitHub Pages.
+        Il répond aux consignes du portfolio numérique en proposant une organisation claire,
+        accessible et structurée de l’ensemble de mes livrables.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Travaux</h2>
+        <p>
+          Regroupe les TD, TP et autres productions académiques réalisés en cours.
+        </p>
+        <a href="travaux/index.html" class="section-link">Accéder aux travaux</a>
+      </article>
+
+      <article class="card">
+        <h2>Cours</h2>
+        <p>
+          Contient mes supports de cours complétés, notes personnelles et documents utiles.
+        </p>
+        <a href="cours/index.html" class="section-link">Accéder aux cours</a>
+      </article>
+
+      <article class="card">
+        <h2>Certifications</h2>
+        <p>
+          Présente mes certifications, attestations et projets valorisant mes compétences.
+        </p>
+        <a href="certifications/index.html" class="section-link">Voir les certifications</a>
+      </article>
+
+      <article class="card">
+        <h2>Projet final</h2>
+        <p>
+          Met en avant mon projet CRM SaaS, sa documentation, son code source et sa démo en ligne.
+        </p>
+        <a href="projet-final/index.html" class="section-link">Découvrir le projet</a>
+      </article>
+
+      <article class="card">
+        <h2>Soutenance</h2>
+        <p>
+          Regroupe le diaporama et les supports préparés pour la présentation orale finale.
+        </p>
+        <a href="soutenance/index.html" class="section-link">Voir la soutenance</a>
+      </article>
+
+      <article class="card">
+        <h2>Ressources</h2>
+        <p>
+          Propose des ressources complémentaires, références et éléments de veille.
+        </p>
+        <a href="ressources/index.html" class="section-link">Voir les ressources</a>
+      </article>
     </section>
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="container footer">
-    <small>© <span id="y"></span> Thi Mai Chi DOAN</small>
+    <small>© <span id="y"></span> Thi Mai Chi DOAN — Portfolio MIAGE</small>
   </footer>
 
   <script>
