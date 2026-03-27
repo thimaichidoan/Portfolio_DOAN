@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soutenance - Portfolio DOAN</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container bar-content">
+
+      <div class="logo">
+        Portfolio MIAGE — Thi Mai Chi DOAN
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html" class="btn">Accueil</a>
+        <a href="../travaux/index.html" class="btn">Travaux</a>
+        <a href="../cours/index.html" class="btn">Cours</a>
+        <a href="../certifications/index.html" class="btn">Certifications</a>
+        <a href="../projet-final/index.html" class="btn">Projet final</a>
+        <a href="index.html" class="btn active">Soutenance</a>
+        <a href="../ressources/index.html" class="btn">Ressources</a>
+        <a href="../a-propos/index.html" class="btn">À propos</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card travaux-card">
+      <p class="section-kicker">Présentation orale</p>
+      <h1 class="page-title">Soutenance</h1>
+      <p class="page-intro">
+        Cette page regroupe les supports liés à ma soutenance finale :
+        présentation, documents complémentaires et éléments de préparation
+        en lien avec mon projet CRM SaaS.
+      </p>
+
+      <ul class="list travaux-list">
+        <li class="item">
+          <a class="file" href="presentation-soutenance.pdf" target="_blank" rel="noopener">
+            <span>
+              <span class="file-title">Présentation de soutenance</span>
+              <span class="file-desc">Support principal utilisé pendant la présentation orale</span>
+            </span>
+            <span class="file-meta">PDF · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="notes-soutenance.pdf" target="_blank" rel="noopener">
+            <span>
+              <span class="file-title">Notes de préparation</span>
+              <span class="file-desc">Résumé des points clés à présenter pendant la soutenance</span>
+            </span>
+            <span class="file-meta">PDF · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="../projet-final/RAPPORT PROJET CRM SAAS.pdf" target="_blank" rel="noopener">
+            <span>
+              <span class="file-title">Rapport du projet final</span>
+              <span class="file-desc">Document détaillant l’ensemble du projet CRM SaaS</span>
+            </span>
+            <span class="file-meta">PDF · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://crm-saas-nine.vercel.app/" target="_blank" rel="noopener">
+            <span>
+              <span class="file-title">Démo en ligne</span>
+              <span class="file-desc">Accès à la version déployée de l’application CRM SaaS</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="y"></span> Thi Mai Chi DOAN</small>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

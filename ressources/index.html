@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ressources - Portfolio DOAN</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="container bar-content">
+
+      <div class="logo">
+        Portfolio MIAGE — Thi Mai Chi DOAN
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html" class="btn">Accueil</a>
+        <a href="../travaux/index.html" class="btn">Travaux</a>
+        <a href="../cours/index.html" class="btn">Cours</a>
+        <a href="../certifications/index.html" class="btn">Certifications</a>
+        <a href="../projet-final/index.html" class="btn">Projet final</a>
+        <a href="../soutenance/index.html" class="btn">Soutenance</a>
+        <a href="index.html" class="btn active">Ressources</a>
+        <a href="../a-propos/index.html" class="btn">À propos</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ===== CONTENU ===== -->
+  <main class="container">
+
+    <section class="card travaux-card">
+      <p class="section-kicker">Outils & liens utiles</p>
+      <h1 class="page-title">Ressources</h1>
+      <p class="page-intro">
+        Cette page regroupe les ressources utiles que j’utilise dans mon parcours :
+        outils de développement, plateformes de formation et documentation technique.
+      </p>
+
+      <ul class="list travaux-list">
+
+        <li class="item">
+          <a class="file" href="https://developer.mozilla.org/" target="_blank">
+            <span>
+              <span class="file-title">MDN Web Docs</span>
+              <span class="file-desc">Documentation complète HTML, CSS, JavaScript</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://react.dev/" target="_blank">
+            <span>
+              <span class="file-title">React Documentation</span>
+              <span class="file-desc">Guide officiel React pour le développement frontend</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://nextjs.org/docs" target="_blank">
+            <span>
+              <span class="file-title">Next.js</span>
+              <span class="file-desc">Framework React pour applications web modernes</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://docs.djangoproject.com/" target="_blank">
+            <span>
+              <span class="file-title">Django</span>
+              <span class="file-desc">Framework backend Python pour applications web</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://www.postgresql.org/docs/" target="_blank">
+            <span>
+              <span class="file-title">PostgreSQL</span>
+              <span class="file-desc">Base de données relationnelle avancée</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://vercel.com/docs" target="_blank">
+            <span>
+              <span class="file-title">Vercel</span>
+              <span class="file-desc">Déploiement frontend rapide et automatisé</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://render.com/docs" target="_blank">
+            <span>
+              <span class="file-title">Render</span>
+              <span class="file-desc">Hébergement backend et API</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a class="file" href="https://www.canva.com/" target="_blank">
+            <span>
+              <span class="file-title">Canva</span>
+              <span class="file-desc">Création de présentations et design</span>
+            </span>
+            <span class="file-meta">Lien · Ouvrir</span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="y"></span> Thi Mai Chi DOAN</small>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
