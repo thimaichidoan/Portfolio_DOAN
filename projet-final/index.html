@@ -2,219 +2,111 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projet final - Portfolio DOAN</title>
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f6f7fb;
-      color: #111;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    .topbar {
-      background: white;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .topbar-content {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .back-link {
-      text-decoration: none;
-      color: #2563eb;
-      font-weight: 600;
-    }
-
-    .hero {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
-      padding: 28px;
-      margin-top: 24px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-    }
-
-    .hero h1 {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 32px;
-    }
-
-    .hero p {
-      color: #4b5563;
-      line-height: 1.6;
-    }
-
-    .tags {
-      margin-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      background: #eef2ff;
-      color: #3730a3;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 12px;
-      font-weight: bold;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: #111827;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      opacity: 0.9;
-    }
-
-    .btn-outline {
-      border: 1px solid #d1d5db;
-      background: white;
-      color: #111827;
-    }
-
-    .btn-outline:hover {
-      background: #f9fafb;
-    }
-
-    .section {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
-      padding: 24px;
-      margin-top: 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
-    }
-
-    .section h2 {
-      margin-top: 0;
-      margin-bottom: 14px;
-    }
-
-    .section ul {
-      padding-left: 20px;
-      line-height: 1.8;
-      color: #374151;
-    }
-
-    .footer {
-      text-align: center;
-      color: #6b7280;
-      padding: 28px 16px;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
+
 <body>
 
   <header class="topbar">
-    <div class="topbar-content">
-      <div class="logo">Portfolio DOAN</div>
-      <a href="../index.html" class="back-link">← Retour à l’accueil</a>
+    <div class="container bar-content">
+      <div class="logo">Portfolio MIAGE — Thi Mai Chi DOAN</div>
+
+      <nav class="nav">
+        <a href="../index.html" class="btn">Accueil</a>
+        <a href="../travaux/index.html" class="btn">Travaux</a>
+        <a href="../cours/index.html" class="btn">Cours</a>
+        <a href="../certifications/index.html" class="btn">Certifications</a>
+        <a href="index.html" class="btn active">Projet final</a>
+        <a href="../soutenance/index.html" class="btn">Soutenance</a>
+        <a href="../ressources/index.html" class="btn">Ressources</a>
+        <a href="../a-propos/index.html" class="btn">À propos</a>
+      </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h1>Projet final — CRM SaaS</h1>
-      <p>
-        Ce projet final consiste à développer une application CRM web permettant
-        de gérer les contacts, entreprises, opportunités commerciales, tâches
-        et campagnes d’emailing dans une architecture moderne full SaaS.
+
+    <section class="card projet-hero">
+      <p class="section-kicker">Projet final MIAGE</p>
+      <h1 class="page-title">CRM SaaS</h1>
+      <p class="page-intro">
+        Ce projet final consiste à concevoir et développer une application CRM web en mode SaaS
+        permettant de centraliser la gestion des contacts, des entreprises, des opportunités
+        commerciales, des tâches et des campagnes d’emailing.
+        L’objectif est de proposer une solution moderne, claire et accessible pour améliorer
+        le suivi commercial.
       </p>
 
-      <div class="tags">
-        <span class="tag">Next.js</span>
-        <span class="tag">React</span>
-        <span class="tag">Django</span>
-        <span class="tag">API REST</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">Vercel</span>
+      <div class="projet-tags">
+        <span class="projet-tag">Next.js</span>
+        <span class="projet-tag">React</span>
+        <span class="projet-tag">TypeScript</span>
+        <span class="projet-tag">Django</span>
+        <span class="projet-tag">API REST</span>
+        <span class="projet-tag">PostgreSQL</span>
+        <span class="projet-tag">Vercel</span>
       </div>
 
-      <div class="buttons">
-        <a href="https://github.com/thimaichidoan/crm-saas" target="_blank" class="btn btn-primary">Code source</a>
-        <a href="https://crm-saas-nine.vercel.app/" target="_blank" class="btn btn-outline">Live demo</a>
-        <a href="../assets/pdf/rapport-crm.pdf" target="_blank" class="btn btn-outline">Rapport</a>
+      <div class="projet-buttons">
+        <a href="https://github.com/thimaichidoan/crm-saas" target="_blank" rel="noopener" class="hero-btn primary">Code source</a>
+        <a href="https://crm-saas-nine.vercel.app/" target="_blank" rel="noopener" class="hero-btn secondary">Live demo</a>
+        <a href="RAPPORT PROJET CRM SAAS.pdf" target="_blank" rel="noopener" class="hero-btn secondary">Rapport</a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Présentation du projet</h2>
-      <p>
-        L’objectif du CRM est de centraliser les informations commerciales
-        et de faciliter le suivi des clients, des prospects et des actions à mener.
-      </p>
-    </section>
+    <section class="projet-grid">
+      <section class="card projet-card">
+        <h2>Vue rapide du projet</h2>
+        <p class="muted">
+          Une application full stack avec interface moderne, backend API REST,
+          authentification utilisateur et déploiement cloud.
+        </p>
 
-    <section class="section">
-      <h2>Fonctionnalités principales</h2>
-      <ul>
-        <li>Authentification utilisateur</li>
-        <li>Gestion des contacts</li>
-        <li>Gestion des entreprises</li>
-        <li>Gestion des deals / pipeline commercial</li>
-        <li>Gestion des tâches</li>
-        <li>Page emailing</li>
-        <li>Dashboard avec statistiques</li>
-      </ul>
-    </section>
+        <div class="projet-stats">
+          <div class="projet-stat">
+            <strong>Full Stack</strong>
+            <span>Frontend + Backend</span>
+          </div>
+          <div class="projet-stat">
+            <strong>SaaS</strong>
+            <span>Accès en ligne</span>
+          </div>
+          <div class="projet-stat">
+            <strong>REST API</strong>
+            <span>Communication sécurisée</span>
+          </div>
+          <div class="projet-stat">
+            <strong>Cloud</strong>
+            <span>Déploiement moderne</span>
+          </div>
+        </div>
+      </section>
 
-    <section class="section">
-      <h2>Technologies utilisées</h2>
-      <ul>
-        <li>Frontend : Next.js / React / TypeScript</li>
-        <li>Backend : Django / Django REST Framework</li>
-        <li>Base de données : PostgreSQL ou SQLite en développement</li>
-        <li>Déploiement : Vercel pour le frontend</li>
-        <li>Versionnage : Git / GitHub</li>
-      </ul>
-    </section>
+      <section class="card projet-card">
+        <h2>Fonctionnalités principales</h2>
+        <ul class="projet-list">
+          <li>Gestion des contacts</li>
+          <li>Gestion des entreprises</li>
+          <li>Suivi des opportunités commerciales</li>
+          <li>Gestion des tâches</li>
+          <li>Authentification sécurisée</li>
+          <li>Tableau de bord avec indicateurs</li>
+        </ul>
+      </section>
+
+
+
   </main>
 
-  <footer class="footer">
-    © 2026 Thi Mai Chi DOAN — Portfolio MIAGE
+  <footer class="container footer">
+    <small>© <span id="y"></span> Thi Mai Chi DOAN — Portfolio MIAGE</small>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
